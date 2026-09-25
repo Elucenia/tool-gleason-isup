@@ -1,0 +1,193 @@
+{
+  "tool": {
+    "id": "gleason-isup",
+    "title": "Gleason e grupo de grau ISUP",
+    "short": "Converte o escore de Gleason no grupo de grau (1 a 5)",
+    "desc": "Converte os padrões de Gleason (primário + secundário) no grupo de grau ISUP 2014/OMS do câncer de próstata, com o prognóstico após prostatectomia.",
+    "lead": "Transforma o escore de Gleason do adenocarcinoma de próstata no grupo de grau ISUP (1 a 5), que separa melhor o prognóstico, sobretudo entre 3 + 4 e 4 + 3.",
+    "spec": [
+      "patologia",
+      "urologia",
+      "oncologia-clinica",
+      "radioterapia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "p",
+        "Padrão primário (mais extenso)",
+        "radio",
+        {
+          "opts": {
+            "3": "3",
+            "4": "4",
+            "5": "5"
+          }
+        }
+      ],
+      [
+        "s",
+        "Padrão secundário",
+        "radio",
+        {
+          "opts": {
+            "3": "3",
+            "4": "4",
+            "5": "5"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>Gleason ≤ 6 = <strong>grupo 1</strong> · 3 + 4 = 7 = <strong>grupo 2</strong> · 4 + 3 = 7 = <strong>grupo 3</strong> · 8 (4 + 4, 3 + 5, 5 + 3) = <strong>grupo 4</strong> · 9 a 10 = <strong>grupo 5</strong>.</p>",
+    "table": [
+      [
+        "Grupo",
+        "Gleason",
+        "Livre de recidiva bioquímica em 5 anos (prostatectomia)"
+      ],
+      [
+        "1",
+        "≤ 6",
+        "96%"
+      ],
+      [
+        "2",
+        "3 + 4 = 7",
+        "88%"
+      ],
+      [
+        "3",
+        "4 + 3 = 7",
+        "63%"
+      ],
+      [
+        "4",
+        "8",
+        "48%"
+      ],
+      [
+        "5",
+        "9–10",
+        "26%"
+      ]
+    ],
+    "tips": [
+      "Na biópsia, o escore soma o padrão mais comum e o de <strong>maior grau</strong>, mesmo que este seja minoritário; na peça, o padrão terciário de alto grau é relatado à parte.",
+      "Os padrões 1 e 2 praticamente não são mais diagnosticados em biópsia: Gleason 6 (3 + 3) é o grau mais baixo na prática, e por isso o grupo 1.",
+      "Informe a porcentagem de padrão 4 no grupo 2: pouco padrão 4 pode permitir vigilância ativa em casos selecionados.",
+      "O grupo de grau entra na estratificação de risco (NCCN, EAU) junto com PSA, estádio T e número de fragmentos positivos: não decida pelo grupo isolado."
+    ],
+    "sources": [
+      [
+        "Epstein JI et al. The 2014 International Society of Urological Pathology (ISUP) consensus conference on Gleason grading of prostatic carcinoma. Am J Surg Pathol, 2016.",
+        "https://doi.org/10.1097/PAS.0000000000000530"
+      ],
+      [
+        "Epstein JI et al. A contemporary prostate cancer grading system: a validated alternative to the Gleason score. Eur Urol, 2016.",
+        "https://doi.org/10.1016/j.eururo.2015.06.046"
+      ]
+    ],
+    "cases": [
+      [
+        "3 + 3 = 6: grupo 1",
+        {
+          "p": "3",
+          "s": "3"
+        },
+        {
+          "raw": {
+            "gg": 1,
+            "sum": 6
+          },
+          "main": "Grupo 1",
+          "level": "low"
+        }
+      ],
+      [
+        "3 + 4 = 7: grupo 2",
+        {
+          "p": "3",
+          "s": "4"
+        },
+        {
+          "raw": {
+            "gg": 2
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "4 + 3 = 7: grupo 3",
+        {
+          "p": "4",
+          "s": "3"
+        },
+        {
+          "raw": {
+            "gg": 3
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "3 + 5 = 8: grupo 4",
+        {
+          "p": "3",
+          "s": "5"
+        },
+        {
+          "raw": {
+            "gg": 4
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "5 + 4 = 9: grupo 5",
+        {
+          "p": "5",
+          "s": "4"
+        },
+        {
+          "raw": {
+            "gg": 5,
+            "sum": 9
+          },
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}

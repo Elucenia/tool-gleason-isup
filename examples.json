@@ -1,0 +1,95 @@
+[
+  {
+    "label": "3 + 3 = 6: grupo 1",
+    "input": {
+      "p": "3",
+      "s": "3"
+    },
+    "expected": {
+      "raw": {
+        "gg": 1,
+        "sum": 6
+      },
+      "main": "Grupo 1",
+      "level": "low"
+    },
+    "originalInput": {
+      "p": "3",
+      "s": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "3 + 4 = 7: grupo 2",
+    "input": {
+      "p": "3",
+      "s": "4"
+    },
+    "expected": {
+      "raw": {
+        "gg": 2
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "p": "3",
+      "s": "4"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "4 + 3 = 7: grupo 3",
+    "input": {
+      "p": "4",
+      "s": "3"
+    },
+    "expected": {
+      "raw": {
+        "gg": 3
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "p": "4",
+      "s": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "3 + 5 = 8: grupo 4",
+    "input": {
+      "p": "3",
+      "s": "5"
+    },
+    "expected": {
+      "raw": {
+        "gg": 4
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "p": "3",
+      "s": "5"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "5 + 4 = 9: grupo 5",
+    "input": {
+      "p": "5",
+      "s": "4"
+    },
+    "expected": {
+      "raw": {
+        "gg": 5,
+        "sum": 9
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "p": "5",
+      "s": "4"
+    },
+    "expandedZeroOptions": []
+  }
+]
