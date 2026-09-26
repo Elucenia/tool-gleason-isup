@@ -1,11 +1,11 @@
-/* tool-gleason-isup · Elucenia · https://github.com/Elucenia/tool-gleason-isup
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-gleason-isup · ELUCENIA · https://github.com/Elucenia/tool-gleason-isup
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"gleason-isup","title":"Gleason e grupo de grau ISUP","fields":[["p","Padrão primário (mais extenso)","radio",{"opts":{"3":"3","4":"4","5":"5"}}],["s","Padrão secundário","radio",{"opts":{"3":"3","4":"4","5":"5"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
