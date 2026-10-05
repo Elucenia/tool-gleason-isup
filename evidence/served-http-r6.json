@@ -1,0 +1,1057 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "gleason-isup",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/gleason-isup/calculator.js",
+    "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+    "bytes": 4663
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "gleason-isup",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "3 + 3 = 6: grupo 1",
+      "originalInput": {
+        "p": "3",
+        "s": "3"
+      },
+      "input": {
+        "p": "3",
+        "s": "3"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "gg": 1,
+          "sum": 6
+        },
+        "main": "Grupo 1",
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "Grupo 1",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 1,
+          "sum": 6
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p": "3",
+            "s": "3"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+          "startedAt": "2026-10-05T17:38:15.869Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gleason-isup",
+              "main": [
+                "Grupo 1",
+                ""
+              ],
+              "label": "Grupo de grau ISUP (OMS)",
+              "raw": {
+                "gg": 1,
+                "sum": 6
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "949a3bee9abe7b203b4e5d3a7d25715634d09e01d8556ccd09187b5134ade631",
+          "bytes": 149,
+          "elapsedMs": 3.29670000000624
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "startedAt": "2026-10-05T17:38:15.869Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gleason-isup",
+            "main": [
+              "Grupo 1",
+              ""
+            ],
+            "label": "Grupo de grau ISUP (OMS)",
+            "raw": {
+              "gg": 1,
+              "sum": 6
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "949a3bee9abe7b203b4e5d3a7d25715634d09e01d8556ccd09187b5134ade631",
+        "bytes": 149,
+        "elapsedMs": 3.29670000000624
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "Grupo 1",
+            "obtained": "Grupo 1",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.gg",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sum",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.gg",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sum",
+            "expected": 6,
+            "obtained": 6,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Grupo 1",
+            "obtained": "Grupo 1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gleason-isup",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "3 + 4 = 7: grupo 2",
+      "originalInput": {
+        "p": "3",
+        "s": "4"
+      },
+      "input": {
+        "p": "3",
+        "s": "4"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "gg": 2
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "Grupo 2",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 2,
+          "sum": 7
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p": "3",
+            "s": "4"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+          "startedAt": "2026-10-05T17:38:16.183Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gleason-isup",
+              "main": [
+                "Grupo 2",
+                ""
+              ],
+              "label": "Grupo de grau ISUP (OMS)",
+              "raw": {
+                "gg": 2,
+                "sum": 7
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "d6948e32241200acf2426a6e2fd30bb9ae133ef7cda3a71090004ae5b3c82f89",
+          "bytes": 149,
+          "elapsedMs": 2.57839999999851
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "startedAt": "2026-10-05T17:38:16.183Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gleason-isup",
+            "main": [
+              "Grupo 2",
+              ""
+            ],
+            "label": "Grupo de grau ISUP (OMS)",
+            "raw": {
+              "gg": 2,
+              "sum": 7
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "d6948e32241200acf2426a6e2fd30bb9ae133ef7cda3a71090004ae5b3c82f89",
+        "bytes": 149,
+        "elapsedMs": 2.57839999999851
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.gg",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.gg",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sum",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Grupo 2",
+            "obtained": "Grupo 2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gleason-isup",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "4 + 3 = 7: grupo 3",
+      "originalInput": {
+        "p": "4",
+        "s": "3"
+      },
+      "input": {
+        "p": "4",
+        "s": "3"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "gg": 3
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "Grupo 3",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 3,
+          "sum": 7
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p": "4",
+            "s": "3"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+          "startedAt": "2026-10-05T17:38:16.497Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gleason-isup",
+              "main": [
+                "Grupo 3",
+                ""
+              ],
+              "label": "Grupo de grau ISUP (OMS)",
+              "raw": {
+                "gg": 3,
+                "sum": 7
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6afa2e70a58d0b51a4cb26951a66e9b8818f5234ca6b8653ed906078a0c27b85",
+          "bytes": 149,
+          "elapsedMs": 2.4848999999812804
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "startedAt": "2026-10-05T17:38:16.497Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gleason-isup",
+            "main": [
+              "Grupo 3",
+              ""
+            ],
+            "label": "Grupo de grau ISUP (OMS)",
+            "raw": {
+              "gg": 3,
+              "sum": 7
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6afa2e70a58d0b51a4cb26951a66e9b8818f5234ca6b8653ed906078a0c27b85",
+        "bytes": 149,
+        "elapsedMs": 2.4848999999812804
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.gg",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.gg",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sum",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Grupo 3",
+            "obtained": "Grupo 3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gleason-isup",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "3 + 5 = 8: grupo 4",
+      "originalInput": {
+        "p": "3",
+        "s": "5"
+      },
+      "input": {
+        "p": "3",
+        "s": "5"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "gg": 4
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "Grupo 4",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 4,
+          "sum": 8
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p": "3",
+            "s": "5"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+          "startedAt": "2026-10-05T17:38:16.811Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gleason-isup",
+              "main": [
+                "Grupo 4",
+                ""
+              ],
+              "label": "Grupo de grau ISUP (OMS)",
+              "raw": {
+                "gg": 4,
+                "sum": 8
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a61f80638f0799edcf47744ee240fe5302cb1aea635601b8d9ac9838ac41a2bb",
+          "bytes": 149,
+          "elapsedMs": 2.3914999999979045
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "startedAt": "2026-10-05T17:38:16.811Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gleason-isup",
+            "main": [
+              "Grupo 4",
+              ""
+            ],
+            "label": "Grupo de grau ISUP (OMS)",
+            "raw": {
+              "gg": 4,
+              "sum": 8
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a61f80638f0799edcf47744ee240fe5302cb1aea635601b8d9ac9838ac41a2bb",
+        "bytes": 149,
+        "elapsedMs": 2.3914999999979045
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.gg",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.gg",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sum",
+            "expected": 8,
+            "obtained": 8,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Grupo 4",
+            "obtained": "Grupo 4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gleason-isup",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "5 + 4 = 9: grupo 5",
+      "originalInput": {
+        "p": "5",
+        "s": "4"
+      },
+      "input": {
+        "p": "5",
+        "s": "4"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "gg": 5,
+          "sum": 9
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "Grupo 5",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 5,
+          "sum": 9
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "p": "5",
+            "s": "4"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+          "startedAt": "2026-10-05T17:38:17.125Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gleason-isup",
+              "main": [
+                "Grupo 5",
+                ""
+              ],
+              "label": "Grupo de grau ISUP (OMS)",
+              "raw": {
+                "gg": 5,
+                "sum": 9
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c91b762ddd8bf221f409a17658a65fba3c7aecb03aa85c08f9bf1e940fa1809d",
+          "bytes": 149,
+          "elapsedMs": 4.97729999999865
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/gleason-isup/calculate",
+        "startedAt": "2026-10-05T17:38:17.125Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gleason-isup",
+            "main": [
+              "Grupo 5",
+              ""
+            ],
+            "label": "Grupo de grau ISUP (OMS)",
+            "raw": {
+              "gg": 5,
+              "sum": 9
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c91b762ddd8bf221f409a17658a65fba3c7aecb03aa85c08f9bf1e940fa1809d",
+        "bytes": 149,
+        "elapsedMs": 4.97729999999865
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.gg",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.sum",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.gg",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.sum",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "Grupo 5",
+            "obtained": "Grupo 5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
