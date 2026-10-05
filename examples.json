@@ -1,6 +1,13 @@
 [
   {
-    "label": "3 + 3 = 6: grupo 1",
+    "id": "gleason-isup",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "3 + 3 = 6: grupo 1",
+    "originalInput": {
+      "p": "3",
+      "s": "3"
+    },
     "input": {
       "p": "3",
       "s": "3"
@@ -13,14 +20,35 @@
       "main": "Grupo 1",
       "level": "low"
     },
-    "originalInput": {
-      "p": "3",
-      "s": "3"
+    "recordedResult": {
+      "main": [
+        "Grupo 1",
+        ""
+      ],
+      "label": "Grupo de grau ISUP (OMS)",
+      "raw": {
+        "gg": 1,
+        "sum": 6
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "3 + 4 = 7: grupo 2",
+    "id": "gleason-isup",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "3 + 4 = 7: grupo 2",
+    "originalInput": {
+      "p": "3",
+      "s": "4"
+    },
     "input": {
       "p": "3",
       "s": "4"
@@ -31,14 +59,35 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "p": "3",
-      "s": "4"
+    "recordedResult": {
+      "main": [
+        "Grupo 2",
+        ""
+      ],
+      "label": "Grupo de grau ISUP (OMS)",
+      "raw": {
+        "gg": 2,
+        "sum": 7
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "4 + 3 = 7: grupo 3",
+    "id": "gleason-isup",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "4 + 3 = 7: grupo 3",
+    "originalInput": {
+      "p": "4",
+      "s": "3"
+    },
     "input": {
       "p": "4",
       "s": "3"
@@ -49,14 +98,35 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "p": "4",
-      "s": "3"
+    "recordedResult": {
+      "main": [
+        "Grupo 3",
+        ""
+      ],
+      "label": "Grupo de grau ISUP (OMS)",
+      "raw": {
+        "gg": 3,
+        "sum": 7
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "3 + 5 = 8: grupo 4",
+    "id": "gleason-isup",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "3 + 5 = 8: grupo 4",
+    "originalInput": {
+      "p": "3",
+      "s": "5"
+    },
     "input": {
       "p": "3",
       "s": "5"
@@ -67,14 +137,35 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "p": "3",
-      "s": "5"
+    "recordedResult": {
+      "main": [
+        "Grupo 4",
+        ""
+      ],
+      "label": "Grupo de grau ISUP (OMS)",
+      "raw": {
+        "gg": 4,
+        "sum": 8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "5 + 4 = 9: grupo 5",
+    "id": "gleason-isup",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "5 + 4 = 9: grupo 5",
+    "originalInput": {
+      "p": "5",
+      "s": "4"
+    },
     "input": {
       "p": "5",
       "s": "4"
@@ -86,10 +177,24 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "p": "5",
-      "s": "4"
+    "recordedResult": {
+      "main": [
+        "Grupo 5",
+        ""
+      ],
+      "label": "Grupo de grau ISUP (OMS)",
+      "raw": {
+        "gg": 5,
+        "sum": 9
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

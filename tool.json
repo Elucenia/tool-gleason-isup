@@ -5,13 +5,13 @@
     "short": "Converte o escore de Gleason no grupo de grau (1 a 5)",
     "desc": "Converte os padrões de Gleason (primário + secundário) no grupo de grau ISUP 2014/OMS do câncer de próstata, com o prognóstico após prostatectomia.",
     "lead": "Transforma o escore de Gleason do adenocarcinoma de próstata no grupo de grau ISUP (1 a 5), que separa melhor o prognóstico, sobretudo entre 3 + 4 e 4 + 3.",
+    "kind": "Calculadora",
     "spec": [
       "patologia",
       "urologia",
       "oncologia-clinica",
       "radioterapia"
     ],
-    "tier": 1,
     "fields": [
       [
         "p",
@@ -39,44 +39,6 @@
       ]
     ],
     "formula": "<p>Gleason ≤ 6 = <strong>grupo 1</strong> · 3 + 4 = 7 = <strong>grupo 2</strong> · 4 + 3 = 7 = <strong>grupo 3</strong> · 8 (4 + 4, 3 + 5, 5 + 3) = <strong>grupo 4</strong> · 9 a 10 = <strong>grupo 5</strong>.</p>",
-    "table": [
-      [
-        "Grupo",
-        "Gleason",
-        "Livre de recidiva bioquímica em 5 anos (prostatectomia)"
-      ],
-      [
-        "1",
-        "≤ 6",
-        "96%"
-      ],
-      [
-        "2",
-        "3 + 4 = 7",
-        "88%"
-      ],
-      [
-        "3",
-        "4 + 3 = 7",
-        "63%"
-      ],
-      [
-        "4",
-        "8",
-        "48%"
-      ],
-      [
-        "5",
-        "9–10",
-        "26%"
-      ]
-    ],
-    "tips": [
-      "Na biópsia, o escore soma o padrão mais comum e o de <strong>maior grau</strong>, mesmo que este seja minoritário; na peça, o padrão terciário de alto grau é relatado à parte.",
-      "Os padrões 1 e 2 praticamente não são mais diagnosticados em biópsia: Gleason 6 (3 + 3) é o grau mais baixo na prática, e por isso o grupo 1.",
-      "Informe a porcentagem de padrão 4 no grupo 2: pouco padrão 4 pode permitir vigilância ativa em casos selecionados.",
-      "O grupo de grau entra na estratificação de risco (NCCN, EAU) junto com PSA, estádio T e número de fragmentos positivos: não decida pelo grupo isolado."
-    ],
     "sources": [
       [
         "Epstein JI et al. The 2014 International Society of Urological Pathology (ISUP) consensus conference on Gleason grading of prostatic carcinoma. Am J Surg Pathol, 2016.",
@@ -157,9 +119,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -168,17 +127,466 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:53:44.635Z",
+      "total": 9,
+      "passed": 9,
+      "sourceRowCount": 9,
+      "uniqueApiInputCount": 9,
+      "sourceContextCount": 9,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "scope": "Independent integer sum and literal Table5 mapping for all nine assigned pattern pairs3–5.",
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "ed2cfc0483115488739f4b2730dbeff6633c0b308b3988e12a102f6e0c951063",
+        "total": 9,
+        "bankRowCount": 9,
+        "uniqueApiInputCount": 9,
+        "sourceContextCount": 9,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final30.json",
+            "sha256": "7767013002c928ad8b35fabfec35fa3edde886d78f8152cfb3624a112e1732a6"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final30.json",
+            "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+          "sha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0"
+        },
+        "packagingRequirement": "All bounded raw-only rows byte exact, original202 expectations and separate1178-peer witness receipt preserved"
+      },
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/six-primary-source-review-final30.json",
+            "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+          },
+          "item": {
+            "id": "gleason-isup",
+            "sourceIds": [
+              "isup-2014-consensus-published2016-table5"
+            ],
+            "executedScope": "Independent integer sum and literal Table5 mapping for all nine assigned pattern pairs3–5.",
+            "inputPopulation": "Prostatic carcinoma with patterns assigned by histopathology; consensus2014/publication2016 explicitly identified.",
+            "sourceSupportedLimits": "Assigned patterns, specimen context and minor-pattern rules must be established before the mapping. The calculator does not assign histology or validate recurrence estimates.",
+            "findings": [],
+            "unchecked": [
+              "Pattern recognition",
+              "Biopsy versus prostatectomy minor/tertiary pattern rules",
+              "Private five-year recurrence survival values",
+              "Later consensus editions"
+            ],
+            "current": {
+              "id": "gleason-isup",
+              "recordSha256": "10148d013c85ea6f090edc18de5b2ea8ff3b8a63921378e77375174369663b19",
+              "frozenRecordFile": "reports/review-20261003/six-primary-frozen-inputs-final30/selected-records/gleason-isup.json",
+              "frozenRecordSha256": "aca825a4aa3ed1d76bd5a55f6c357cb08f2dd8d3427d971b446435effafae40c",
+              "methodVersion": "ISUPconsenso 2014/publicação 2016:5 grupos, distinção 3+4/4+3",
+              "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/26492179/",
+              "adapters": [
+                {
+                  "file": "apps/website/private/tool-code/gleason-isup/calculator.js",
+                  "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+                  "bytes": 4663,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/website/private/tool-code/gleason-isup/calculator.js",
+                  "currentSha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+                },
+                {
+                  "file": "apps/dashboard/private/tool-code/gleason-isup/calculator.js",
+                  "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+                  "bytes": 4663,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/dashboard/private/tool-code/gleason-isup/calculator.js",
+                  "currentSha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+                },
+                {
+                  "file": "apps/command-center/private/tool-code/gleason-isup/calculator.js",
+                  "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+                  "bytes": 4663,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/command-center/private/tool-code/gleason-isup/calculator.js",
+                  "currentSha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+                }
+              ]
+            },
+            "clinicalApproval": "not-performed",
+            "professionalLanguageApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodConformance": "not-performed"
+          },
+          "sources": [
+            {
+              "id": "isup-2014-consensus-published2016-table5",
+              "url": "https://www.palga.nl/media/uploads/pdf/1/7/179_the-2014-international-society-of-urological-pathology-isup-consensus-conference-on-gleason-grading-of-prostatic-carcinoma-definition-of-grading-patterns-and-pro.pdf",
+              "identityUrl": "https://pubmed.ncbi.nlm.nih.gov/26492179/",
+              "doi": "10.1097/PAS.0000000000000530",
+              "edition": "ISUP2014 consensus, published2016 in American Journal of Surgical Pathology40:244–252",
+              "access": "Original author article PDF on national pathology foundation host; Table5 printed250/PDF7 visually read",
+              "document": {
+                "file": "six-primary-documents-final30/isup-2016.pdf",
+                "bytes": 616161,
+                "sha256": "21da938b02bf4dd0af07fafcb4af38ee7b5eaed6c56726570dc0c3b4241133c4"
+              },
+              "renderedPages": [
+                {
+                  "file": "six-primary-documents-final30/isup-2016-p7.png",
+                  "bytes": 759340,
+                  "sha256": "f7c43a7088a59c65e3fe156a7b22f04620b56ba731ba5aabc567f0040fdb1acd"
+                }
+              ],
+              "readScope": "Table5 grade groups1–5 and all nine assigned pattern pairs3–5.3+4 differs from4+3; sum8 includes3+5,4+4,5+3. Footnotes and targeted text distinguish histologic assignment, minor patterns and specimen context, which are outside the executed mapping scope.",
+              "tableRead": true,
+              "visualPdfRead": true,
+              "excluded": "No histologic recognition, minor/tertiary-pattern selection, recurrence survival prediction or subsequent ISUP edition adoption"
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+      "evidenceSha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0",
+      "independentPeer": {
+        "status": "passed",
+        "file": "reports/review-20261003/six-source30-independent-peer-verify.json",
+        "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+        "scope": "Independent selected source expectations202 and additional1178 own witnesses; primary access limitations and clinical/rubric exclusions remain explicit.",
+        "sourcePeerInputCount": 1178,
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/gleason-isup/calculator.js",
+          "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+          "app": "website"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/gleason-isup/calculator.js",
+          "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+          "app": "dashboard"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/gleason-isup/calculator.js",
+          "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+          "app": "command-center"
+        }
+      ],
+      "qualifications": [
+        "Independent integer sum and literal Table5 mapping for all nine assigned pattern pairs3–5.",
+        "Pattern recognition",
+        "Biopsy versus prostatectomy minor/tertiary pattern rules",
+        "Private five-year recurrence survival values",
+        "Later consensus editions",
+        "A technical pass is limited to the listed public raw fields. Patient examination, diagnosis, eligibility, rubric administration, prognosis, outcome, management, professional/official translation, rights and full-method conformance remain not-performed.",
+        "Four selected-code/class mapping tools are not validated as clinical raters by code-identity tests. Brown and TG18 require preaffirmed findings/diagnosis; the calculator does not establish them.",
+        "Bethesda risk means/ranges and all private clinical/mortality/recurrence outputs are excluded, even if observed in the donor report.",
+        "Three fresh Node/VM raw-only adapter replays plus original isolated Chromium observations; no fresh served UI or deployment binding.",
+        "Source28/29 and documentary-source30 recipes are separately owned; compose per ID and recalculate totals without stale whole-catalog replacement."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "ISUPconsenso 2014/publicação 2016:5 grupos, distinção 3+4/4+3",
+    "implementationVersion": "gleason-isup@native-2026-10-03+3702311f064a",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/26492179/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Gleason ≤ 6 = grupo 1 · 3 + 4 = 7 = grupo 2 · 4 + 3 = 7 = grupo 3 · 8 (4 + 4, 3 + 5, 5 + 3) = grupo 4 · 9 a 10 = grupo 5 .",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "p",
+            "label": "Padrão primário (mais extenso)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "3": "3",
+              "4": "4",
+              "5": "5"
+            }
+          },
+          {
+            "key": "s",
+            "label": "Padrão secundário",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "3": "3",
+              "4": "4",
+              "5": "5"
+            }
+          }
+        ],
+        "hash": "b1dbf28cd74f5c58e6bbd3695d327077324dfc8d3e6a40a04c29667b1885ee85"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Epstein JI et al. The 2014 International Society of Urological Pathology (ISUP) consensus conference on Gleason grading of prostatic carcinoma. Am J Surg Pathol, 2016.",
+          "url": "https://doi.org/10.1097/PAS.0000000000000530",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The 2014 International Society of Urological Pathology (ISUP) Consensus Conference on Gleason Grading of Prostatic Carcinoma: Definition of Grading Patterns and Proposal for a New Grading System.",
+            "year": "2016",
+            "firstPublicationDate": "2016-02-01",
+            "doi": "10.1097/pas.0000000000000530",
+            "pmid": "26492179",
+            "journal": "The American journal of surgical pathology",
+            "authors": "Epstein JI, Egevad L, Amin MB, Delahunt B, Srigley JR, Humphrey PA, Grading Committee."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/26492179/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "ab696535c233c37d4d834ce71a0f2358930af6d0cbd6c9c20e41f5a28c302c1a",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Epstein JI et al. A contemporary prostate cancer grading system: a validated alternative to the Gleason score. Eur Urol, 2016.",
+          "url": "https://doi.org/10.1016/j.eururo.2015.06.046",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A Contemporary Prostate Cancer Grading System: A Validated Alternative to the Gleason Score.",
+            "year": "2016",
+            "firstPublicationDate": "2015-07-10",
+            "doi": "10.1016/j.eururo.2015.06.046",
+            "pmid": "26166626",
+            "pmcid": "PMC5002992",
+            "journal": "European urology",
+            "authors": "Epstein JI, Zelefsky MJ, Sjoberg DD, Nelson JB, Egevad L, Magi-Galluzzi C, Vickers AJ, Parwani AV, Reuter VE, Fine SW, Eastham JA, Wiklund P, Han M, Reddy CA, Ciezki JP, Nyberg T, Klein EA."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5002992/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "239c23f4bbab3e27665b85709104caedb574b500fcead278f75d67a7135d7171",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:53:44.635Z",
+        "total": 9,
+        "passed": 9,
+        "sourceRowCount": 9,
+        "uniqueApiInputCount": 9,
+        "sourceContextCount": 9,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "scope": "Independent integer sum and literal Table5 mapping for all nine assigned pattern pairs3–5.",
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "ed2cfc0483115488739f4b2730dbeff6633c0b308b3988e12a102f6e0c951063",
+          "total": 9,
+          "bankRowCount": 9,
+          "uniqueApiInputCount": 9,
+          "sourceContextCount": 9,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final30.json",
+              "sha256": "7767013002c928ad8b35fabfec35fa3edde886d78f8152cfb3624a112e1732a6"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final30.json",
+              "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+            "sha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0"
+          },
+          "packagingRequirement": "All bounded raw-only rows byte exact, original202 expectations and separate1178-peer witness receipt preserved"
+        },
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/six-primary-source-review-final30.json",
+              "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+            },
+            "item": {
+              "id": "gleason-isup",
+              "sourceIds": [
+                "isup-2014-consensus-published2016-table5"
+              ],
+              "executedScope": "Independent integer sum and literal Table5 mapping for all nine assigned pattern pairs3–5.",
+              "inputPopulation": "Prostatic carcinoma with patterns assigned by histopathology; consensus2014/publication2016 explicitly identified.",
+              "sourceSupportedLimits": "Assigned patterns, specimen context and minor-pattern rules must be established before the mapping. The calculator does not assign histology or validate recurrence estimates.",
+              "findings": [],
+              "unchecked": [
+                "Pattern recognition",
+                "Biopsy versus prostatectomy minor/tertiary pattern rules",
+                "Private five-year recurrence survival values",
+                "Later consensus editions"
+              ],
+              "current": {
+                "id": "gleason-isup",
+                "recordSha256": "10148d013c85ea6f090edc18de5b2ea8ff3b8a63921378e77375174369663b19",
+                "frozenRecordFile": "reports/review-20261003/six-primary-frozen-inputs-final30/selected-records/gleason-isup.json",
+                "frozenRecordSha256": "aca825a4aa3ed1d76bd5a55f6c357cb08f2dd8d3427d971b446435effafae40c",
+                "methodVersion": "ISUPconsenso 2014/publicação 2016:5 grupos, distinção 3+4/4+3",
+                "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/26492179/",
+                "adapters": [
+                  {
+                    "file": "apps/website/private/tool-code/gleason-isup/calculator.js",
+                    "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+                    "bytes": 4663,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/website/private/tool-code/gleason-isup/calculator.js",
+                    "currentSha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+                  },
+                  {
+                    "file": "apps/dashboard/private/tool-code/gleason-isup/calculator.js",
+                    "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+                    "bytes": 4663,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/dashboard/private/tool-code/gleason-isup/calculator.js",
+                    "currentSha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+                  },
+                  {
+                    "file": "apps/command-center/private/tool-code/gleason-isup/calculator.js",
+                    "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+                    "bytes": 4663,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/command-center/private/tool-code/gleason-isup/calculator.js",
+                    "currentSha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+                  }
+                ]
+              },
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "rightsApproval": "not-performed",
+              "fullMethodConformance": "not-performed"
+            },
+            "sources": [
+              {
+                "id": "isup-2014-consensus-published2016-table5",
+                "url": "https://www.palga.nl/media/uploads/pdf/1/7/179_the-2014-international-society-of-urological-pathology-isup-consensus-conference-on-gleason-grading-of-prostatic-carcinoma-definition-of-grading-patterns-and-pro.pdf",
+                "identityUrl": "https://pubmed.ncbi.nlm.nih.gov/26492179/",
+                "doi": "10.1097/PAS.0000000000000530",
+                "edition": "ISUP2014 consensus, published2016 in American Journal of Surgical Pathology40:244–252",
+                "access": "Original author article PDF on national pathology foundation host; Table5 printed250/PDF7 visually read",
+                "document": {
+                  "file": "six-primary-documents-final30/isup-2016.pdf",
+                  "bytes": 616161,
+                  "sha256": "21da938b02bf4dd0af07fafcb4af38ee7b5eaed6c56726570dc0c3b4241133c4"
+                },
+                "renderedPages": [
+                  {
+                    "file": "six-primary-documents-final30/isup-2016-p7.png",
+                    "bytes": 759340,
+                    "sha256": "f7c43a7088a59c65e3fe156a7b22f04620b56ba731ba5aabc567f0040fdb1acd"
+                  }
+                ],
+                "readScope": "Table5 grade groups1–5 and all nine assigned pattern pairs3–5.3+4 differs from4+3; sum8 includes3+5,4+4,5+3. Footnotes and targeted text distinguish histologic assignment, minor patterns and specimen context, which are outside the executed mapping scope.",
+                "tableRead": true,
+                "visualPdfRead": true,
+                "excluded": "No histologic recognition, minor/tertiary-pattern selection, recurrence survival prediction or subsequent ISUP edition adoption"
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+        "evidenceSha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0",
+        "independentPeer": {
+          "status": "passed",
+          "file": "reports/review-20261003/six-source30-independent-peer-verify.json",
+          "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+          "scope": "Independent selected source expectations202 and additional1178 own witnesses; primary access limitations and clinical/rubric exclusions remain explicit.",
+          "sourcePeerInputCount": 1178,
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/gleason-isup/calculator.js",
+            "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+            "app": "website"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/gleason-isup/calculator.js",
+            "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+            "app": "dashboard"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/gleason-isup/calculator.js",
+            "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+            "app": "command-center"
+          }
+        ],
+        "qualifications": [
+          "Independent integer sum and literal Table5 mapping for all nine assigned pattern pairs3–5.",
+          "Pattern recognition",
+          "Biopsy versus prostatectomy minor/tertiary pattern rules",
+          "Private five-year recurrence survival values",
+          "Later consensus editions",
+          "A technical pass is limited to the listed public raw fields. Patient examination, diagnosis, eligibility, rubric administration, prognosis, outcome, management, professional/official translation, rights and full-method conformance remain not-performed.",
+          "Four selected-code/class mapping tools are not validated as clinical raters by code-identity tests. Brown and TG18 require preaffirmed findings/diagnosis; the calculator does not establish them.",
+          "Bethesda risk means/ranges and all private clinical/mortality/recurrence outputs are excluded, even if observed in the donor report.",
+          "Three fresh Node/VM raw-only adapter replays plus original isolated Chromium observations; no fresh served UI or deployment binding.",
+          "Source28/29 and documentary-source30 recipes are separately owned; compose per ID and recalculate totals without stale whole-catalog replacement."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+    },
+    "limits": "A conversão em grupos ISUP pressupõe padrões Gleason corretamente atribuídos na histologia de câncer de próstata; 3+4 não equivale a 4+3. O consenso 2014 não recomenda graduar pelo Gleason o carcinoma intraductal sem carcinoma invasivo. A calculadora não determina os padrões nem substitui avaliação anatomopatológica.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.994Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Conversão de uma soma não atribui padrão histológico; técnicas, exceções e versões posteriores não foram lidas integralmente."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gleason-isup/calculator.js",
+    "bytes": 4663,
+    "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "7db51213ba48d8ccd734e8ead2ae887b38a964e5298be7169b8d5b3cf0dfc9d2",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "2a1d888eb0024ba1a3c79fb8a3bbfde4a539dd5acbdacaa565d83bdf26f13993",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "2a1d888eb0024ba1a3c79fb8a3bbfde4a539dd5acbdacaa565d83bdf26f13993",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
