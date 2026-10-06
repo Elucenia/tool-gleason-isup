@@ -296,7 +296,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "ISUPconsenso 2014/publicação 2016:5 grupos, distinção 3+4/4+3",
-    "implementationVersion": "gleason-isup@native-2026-10-03+3702311f064a",
+    "implementationVersion": "gleason-isup@native-2026-10-05+36c6de3f0a4c",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/26492179/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -551,7 +551,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+      "implementationHash": "36c6de3f0a4c7974c3ba0e5a88afcfcac0e536fa69e4a87d264ec4dfcd41ace1",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "gleason-isup@native-2026-10-03+3702311f064a",
+          "previousImplementationHash": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+          "implementationHash": "36c6de3f0a4c7974c3ba0e5a88afcfcac0e536fa69e4a87d264ec4dfcd41ace1",
+          "scientificBodySha256": "a9ff1431af234c63dbc6607949eaf85dc5844724fffd8d16e24ee5abec759530",
+          "metadataContractHash": "b1dbf28cd74f5c58e6bbd3695d327077324dfc8d3e6a40a04c29667b1885ee85",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A conversão em grupos ISUP pressupõe padrões Gleason corretamente atribuídos na histologia de câncer de próstata; 3+4 não equivale a 4+3. O consenso 2014 não recomenda graduar pelo Gleason o carcinoma intraductal sem carcinoma invasivo. A calculadora não determina os padrões nem substitui avaliação anatomopatológica.",
     "sourceLimitEvidence": {
@@ -570,20 +598,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/gleason-isup/calculator.js",
-    "bytes": 4663,
-    "sha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15"
+    "bytes": 4868,
+    "sha256": "36c6de3f0a4c7974c3ba0e5a88afcfcac0e536fa69e4a87d264ec4dfcd41ace1"
   },
-  "sourceToolSha256": "7db51213ba48d8ccd734e8ead2ae887b38a964e5298be7169b8d5b3cf0dfc9d2",
+  "sourceToolSha256": "d8d4f08d7ed64c61b76ac05ed0a1648b09571b464a21f8ba97ceb403dcdf04b6",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "2a1d888eb0024ba1a3c79fb8a3bbfde4a539dd5acbdacaa565d83bdf26f13993",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "2a1d888eb0024ba1a3c79fb8a3bbfde4a539dd5acbdacaa565d83bdf26f13993",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,0 +1,1732 @@
+{
+  "id": "gleason-isup",
+  "implementationVersion": "gleason-isup@native-2026-10-05+36c6de3f0a4c",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6: grupo de grau 1",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7: grupo de grau 2",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7: grupo de grau 3",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8: grupo de grau 4",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9: grupo de grau 5",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-year biochemical recurrence-free survival after prostatectomy",
+                "locale": "en",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "en",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6: grade group 1",
+            "locale": "en",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-year biochemical recurrence-free survival after prostatectomy",
+                "locale": "en",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "en",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7: grade group 2",
+            "locale": "en",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-year biochemical recurrence-free survival after prostatectomy",
+                "locale": "en",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "en",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7: grade group 3",
+            "locale": "en",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-year biochemical recurrence-free survival after prostatectomy",
+                "locale": "en",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "en",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8: grade group 4",
+            "locale": "en",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-year biochemical recurrence-free survival after prostatectomy",
+                "locale": "en",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "en",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9: grade group 5",
+            "locale": "en",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Supervivencia libre de recurrencia bioquímica a 5 años después de prostatectomía",
+                "locale": "es",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "es",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6: grupo de grado 1",
+            "locale": "es",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Supervivencia libre de recurrencia bioquímica a 5 años después de prostatectomía",
+                "locale": "es",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "es",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7: grupo de grado 2",
+            "locale": "es",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Supervivencia libre de recurrencia bioquímica a 5 años después de prostatectomía",
+                "locale": "es",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "es",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7: grupo de grado 3",
+            "locale": "es",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Supervivencia libre de recurrencia bioquímica a 5 años después de prostatectomía",
+                "locale": "es",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "es",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8: grupo de grado 4",
+            "locale": "es",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Supervivencia libre de recurrencia bioquímica a 5 años después de prostatectomía",
+                "locale": "es",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "es",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9: grupo de grado 5",
+            "locale": "es",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Survie sans récidive biochimique à 5 ans après prostatectomie",
+                "locale": "fr",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "fr",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6 : groupe de grade 1",
+            "locale": "fr",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Survie sans récidive biochimique à 5 ans après prostatectomie",
+                "locale": "fr",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "fr",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7 : groupe de grade 2",
+            "locale": "fr",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Survie sans récidive biochimique à 5 ans après prostatectomie",
+                "locale": "fr",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "fr",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7 : groupe de grade 3",
+            "locale": "fr",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Survie sans récidive biochimique à 5 ans après prostatectomie",
+                "locale": "fr",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "fr",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8 : groupe de grade 4",
+            "locale": "fr",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Survie sans récidive biochimique à 5 ans après prostatectomie",
+                "locale": "fr",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "fr",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9 : groupe de grade 5",
+            "locale": "fr",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie",
+                "locale": "de",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "de",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6: Gradgruppe 1",
+            "locale": "de",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie",
+                "locale": "de",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "de",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7: Gradgruppe 2",
+            "locale": "de",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie",
+                "locale": "de",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "de",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7: Gradgruppe 3",
+            "locale": "de",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie",
+                "locale": "de",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "de",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8: Gradgruppe 4",
+            "locale": "de",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie",
+                "locale": "de",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "de",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9: Gradgruppe 5",
+            "locale": "de",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia",
+                "locale": "it",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "it",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6: gruppo di grado 1",
+            "locale": "it",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia",
+                "locale": "it",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "it",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7: gruppo di grado 2",
+            "locale": "it",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia",
+                "locale": "it",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "it",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7: gruppo di grado 3",
+            "locale": "it",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia",
+                "locale": "it",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "it",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8: gruppo di grado 4",
+            "locale": "it",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia",
+                "locale": "it",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "it",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9: gruppo di grado 5",
+            "locale": "it",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البقاء الخالي من النكس الكيميائي الحيوي لمدة 5 سنوات بعد استئصال البروستاتا",
+                "locale": "ar",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "٩٦%",
+                "locale": "ar",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason ٣ + ٣ = ٦: مجموعة الدرجة ١",
+            "locale": "ar",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البقاء الخالي من النكس الكيميائي الحيوي لمدة 5 سنوات بعد استئصال البروستاتا",
+                "locale": "ar",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "٨٨%",
+                "locale": "ar",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason ٣ + ٤ = ٧: مجموعة الدرجة ٢",
+            "locale": "ar",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البقاء الخالي من النكس الكيميائي الحيوي لمدة 5 سنوات بعد استئصال البروستاتا",
+                "locale": "ar",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "٦٣%",
+                "locale": "ar",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason ٤ + ٣ = ٧: مجموعة الدرجة ٣",
+            "locale": "ar",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البقاء الخالي من النكس الكيميائي الحيوي لمدة 5 سنوات بعد استئصال البروستاتا",
+                "locale": "ar",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "٤٨%",
+                "locale": "ar",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason ٣ + ٥ = ٨: مجموعة الدرجة ٤",
+            "locale": "ar",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "البقاء الخالي من النكس الكيميائي الحيوي لمدة 5 سنوات بعد استئصال البروستاتا",
+                "locale": "ar",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "٢٦%",
+                "locale": "ar",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason ٥ + ٤ = ٩: مجموعة الدرجة ٥",
+            "locale": "ar",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前列腺切除术后 5 年生化复发无病生存率",
+                "locale": "zh",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "zh",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6：分级组 1",
+            "locale": "zh",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前列腺切除术后 5 年生化复发无病生存率",
+                "locale": "zh",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "zh",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7：分级组 2",
+            "locale": "zh",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前列腺切除术后 5 年生化复发无病生存率",
+                "locale": "zh",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "zh",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7：分级组 3",
+            "locale": "zh",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前列腺切除术后 5 年生化复发无病生存率",
+                "locale": "zh",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "zh",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8：分级组 4",
+            "locale": "zh",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前列腺切除术后 5 年生化复发无病生存率",
+                "locale": "zh",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "zh",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9：分级组 5",
+            "locale": "zh",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前立腺摘除術後の5年生化学的再発無再発生存",
+                "locale": "ja",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "ja",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6: グレードグループ 1",
+            "locale": "ja",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前立腺摘除術後の5年生化学的再発無再発生存",
+                "locale": "ja",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "ja",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7: グレードグループ 2",
+            "locale": "ja",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前立腺摘除術後の5年生化学的再発無再発生存",
+                "locale": "ja",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "ja",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7: グレードグループ 3",
+            "locale": "ja",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前立腺摘除術後の5年生化学的再発無再発生存",
+                "locale": "ja",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "ja",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8: グレードグループ 4",
+            "locale": "ja",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "前立腺摘除術後の5年生化学的再発無再発生存",
+                "locale": "ja",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "ja",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9: グレードグループ 5",
+            "locale": "ja",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "3 + 3 = 6: grupo 1",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रोस्टेटेक्टॉमी के बाद 5-वर्षीय जैवरासायनिक पुनरावृत्ति-मुक्त जीवित रहना",
+                "locale": "hi",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "96%",
+                "locale": "hi",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  96
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 3 = 6: ग्रेड समूह 1",
+            "locale": "hi",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              3,
+              6,
+              1
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "3 + 4 = 7: grupo 2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रोस्टेटेक्टॉमी के बाद 5-वर्षीय जैवरासायनिक पुनरावृत्ति-मुक्त जीवित रहना",
+                "locale": "hi",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "88%",
+                "locale": "hi",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  88
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 4 = 7: ग्रेड समूह 2",
+            "locale": "hi",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              4,
+              7,
+              2
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "4 + 3 = 7: grupo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रोस्टेटेक्टॉमी के बाद 5-वर्षीय जैवरासायनिक पुनरावृत्ति-मुक्त जीवित रहना",
+                "locale": "hi",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "63%",
+                "locale": "hi",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  63
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 4 + 3 = 7: ग्रेड समूह 3",
+            "locale": "hi",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              4,
+              3,
+              7,
+              3
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "3 + 5 = 8: grupo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रोस्टेटेक्टॉमी के बाद 5-वर्षीय जैवरासायनिक पुनरावृत्ति-मुक्त जीवित रहना",
+                "locale": "hi",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "48%",
+                "locale": "hi",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  48
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 3 + 5 = 8: ग्रेड समूह 4",
+            "locale": "hi",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              3,
+              5,
+              8,
+              4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "5 + 4 = 9: grupo 5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रोस्टेटेक्टॉमी के बाद 5-वर्षीय जैवरासायनिक पुनरावृत्ति-मुक्त जीवित रहना",
+                "locale": "hi",
+                "template": "documented-authored-73beb3ab31a82bdb9b4c"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "hi",
+                "template": "documented-authored-e9292708cc7ee316397b",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gleason 5 + 4 = 9: ग्रेड समूह 5",
+            "locale": "hi",
+            "template": "documented-authored-86bf497598916e5bdd40",
+            "sourceNumbers": [
+              5,
+              4,
+              9,
+              5
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -69,3 +69,52 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Gleason 3 + 3 = 6: Gradgruppe 1
+
+| Ergebnisdetails | |
+| --- | --- |
+| 5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie | 96% |
+
+
+### 2
+
+Gleason 3 + 4 = 7: Gradgruppe 2
+
+| Ergebnisdetails | |
+| --- | --- |
+| 5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie | 88% |
+
+
+### 3
+
+Gleason 4 + 3 = 7: Gradgruppe 3
+
+| Ergebnisdetails | |
+| --- | --- |
+| 5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie | 63% |
+
+
+### 4
+
+Gleason 3 + 5 = 8: Gradgruppe 4
+
+| Ergebnisdetails | |
+| --- | --- |
+| 5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie | 48% |
+
+
+### 5
+
+Gleason 5 + 4 = 9: Gradgruppe 5
+
+| Ergebnisdetails | |
+| --- | --- |
+| 5-Jahres-biochemisches rezidivfreies Überleben nach Prostatektomie | 26% |
+

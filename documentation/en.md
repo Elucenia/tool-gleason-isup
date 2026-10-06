@@ -69,3 +69,52 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Gleason 3 + 3 = 6: grade group 1
+
+| Result details | |
+| --- | --- |
+| 5-year biochemical recurrence-free survival after prostatectomy | 96% |
+
+
+### 2
+
+Gleason 3 + 4 = 7: grade group 2
+
+| Result details | |
+| --- | --- |
+| 5-year biochemical recurrence-free survival after prostatectomy | 88% |
+
+
+### 3
+
+Gleason 4 + 3 = 7: grade group 3
+
+| Result details | |
+| --- | --- |
+| 5-year biochemical recurrence-free survival after prostatectomy | 63% |
+
+
+### 4
+
+Gleason 3 + 5 = 8: grade group 4
+
+| Result details | |
+| --- | --- |
+| 5-year biochemical recurrence-free survival after prostatectomy | 48% |
+
+
+### 5
+
+Gleason 5 + 4 = 9: grade group 5
+
+| Result details | |
+| --- | --- |
+| 5-year biochemical recurrence-free survival after prostatectomy | 26% |
+

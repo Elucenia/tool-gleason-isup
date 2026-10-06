@@ -1,0 +1,314 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "gleason-isup",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "a9671caaf8a4a4d84d4b66fcdd1e8fbc853e2e20",
+    "oldEngineSha256": "3702311f064aaac9f639339327810bde34a31524e80b5cbcdd44ddd6c9be0f15",
+    "currentEngineSha256": "36c6de3f0a4c7974c3ba0e5a88afcfcac0e536fa69e4a87d264ec4dfcd41ace1"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "3 + 3 = 6: grupo 1",
+      "input": {
+        "p": "3",
+        "s": "3"
+      },
+      "publicOutput": {
+        "id": "gleason-isup",
+        "main": [
+          "Grupo 1",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 1,
+          "sum": 6
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "gg": 1,
+          "sum": 6
+        },
+        "main": "Grupo 1",
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Grupo 1",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "level": "low",
+        "verdict": "Gleason 3 + 3 = 6: grupo de grau 1",
+        "rows": [
+          [
+            "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+            "96%"
+          ]
+        ],
+        "raw": {
+          "gg": 1,
+          "sum": 6
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "3 + 4 = 7: grupo 2",
+      "input": {
+        "p": "3",
+        "s": "4"
+      },
+      "publicOutput": {
+        "id": "gleason-isup",
+        "main": [
+          "Grupo 2",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 2,
+          "sum": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "gg": 2
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Grupo 2",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "level": "mid",
+        "verdict": "Gleason 3 + 4 = 7: grupo de grau 2",
+        "rows": [
+          [
+            "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+            "88%"
+          ]
+        ],
+        "raw": {
+          "gg": 2,
+          "sum": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "4 + 3 = 7: grupo 3",
+      "input": {
+        "p": "4",
+        "s": "3"
+      },
+      "publicOutput": {
+        "id": "gleason-isup",
+        "main": [
+          "Grupo 3",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 3,
+          "sum": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "gg": 3
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Grupo 3",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "level": "mid",
+        "verdict": "Gleason 4 + 3 = 7: grupo de grau 3",
+        "rows": [
+          [
+            "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+            "63%"
+          ]
+        ],
+        "raw": {
+          "gg": 3,
+          "sum": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "3 + 5 = 8: grupo 4",
+      "input": {
+        "p": "3",
+        "s": "5"
+      },
+      "publicOutput": {
+        "id": "gleason-isup",
+        "main": [
+          "Grupo 4",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 4,
+          "sum": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "gg": 4
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Grupo 4",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "level": "high",
+        "verdict": "Gleason 3 + 5 = 8: grupo de grau 4",
+        "rows": [
+          [
+            "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+            "48%"
+          ]
+        ],
+        "raw": {
+          "gg": 4,
+          "sum": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "5 + 4 = 9: grupo 5",
+      "input": {
+        "p": "5",
+        "s": "4"
+      },
+      "publicOutput": {
+        "id": "gleason-isup",
+        "main": [
+          "Grupo 5",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "raw": {
+          "gg": 5,
+          "sum": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "gg": 5,
+          "sum": 9
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "Grupo 5",
+          ""
+        ],
+        "label": "Grupo de grau ISUP (OMS)",
+        "level": "high",
+        "verdict": "Gleason 5 + 4 = 9: grupo de grau 5",
+        "rows": [
+          [
+            "Sobrevida livre de recidiva bioquímica em 5 anos após prostatectomia",
+            "26%"
+          ]
+        ],
+        "raw": {
+          "gg": 5,
+          "sum": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

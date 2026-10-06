@@ -69,3 +69,52 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Gleason 3 + 3 = 6: gruppo di grado 1
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia | 96% |
+
+
+### 2
+
+Gleason 3 + 4 = 7: gruppo di grado 2
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia | 88% |
+
+
+### 3
+
+Gleason 4 + 3 = 7: gruppo di grado 3
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia | 63% |
+
+
+### 4
+
+Gleason 3 + 5 = 8: gruppo di grado 4
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia | 48% |
+
+
+### 5
+
+Gleason 5 + 4 = 9: gruppo di grado 5
+
+| Dettagli del risultato | |
+| --- | --- |
+| Sopravvivenza libera da recidiva biochimica a 5 anni dopo prostatectomia | 26% |
+
